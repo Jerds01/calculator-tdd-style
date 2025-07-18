@@ -51,5 +51,21 @@ public class Calculator {
         return (short) (firstNum*secondNum);
     }
 
+// division
+    public int divide(int firstNum, int secondNum){
+        return firstNum/secondNum;
+    }
+    public float divide(float firstNum, float secondNum){
+        return firstNum/secondNum;
+    }
+    public double divide(double firstNum, double secondNum){
+        return firstNum/secondNum;
+    }
+    public long divide(long firstNum, long secondNum){
+        return firstNum/secondNum;
+    }
+    public short divide(short firstNum, short secondNum){
+        return (short) (firstNum/secondNum);
+    }
 
 }

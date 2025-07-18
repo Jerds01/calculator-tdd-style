@@ -60,6 +60,12 @@ public class CalculatorTest {
         short difference= calc.subtract((short) 6.2, (short) 2.1);
         assertEquals(4, difference,  0.0001);
     }
+
+
+
+    // Multiplication
+
+
     @Test
     public void testMultiplicationInt(){
         int product= calc.multiply(6,2);
@@ -85,5 +91,41 @@ public class CalculatorTest {
         short product= calc.multiply((short) 6.2, (short) 2.1);
         assertEquals(12, product,  0.0001);
     }
+
+
+    // Division
+    @Test
+    public void testDivisionInt(){
+        int quotient= calc.divide(6,2);
+        assertEquals(3, quotient);
+    }
+    @Test
+    public void testDivisionFloat(){
+        float quotient= calc.divide(6.5f,2.3f);
+        assertEquals(2.8260, quotient,  0.0001);
+    }
+    @Test
+    public void testDivisionDouble(){
+        double quotient= calc.divide(6.5,2.3);
+        assertEquals(2.8260, quotient, 0.0001);
+    }
+    @Test
+    public void testDivisionLong(){
+        long quotient= calc.divide((long) 6, (long) 2);
+        assertEquals(3, quotient,  0.0001);
+    }
+    @Test
+    public void testDivisionShort(){
+        short quotient= calc.divide((short) 6.2, (short) 2.1);
+        assertEquals(3, quotient,  0.0001);
+    }
+    @Test
+    public void testDivisionByZero(){
+        assertThrows(ArithmeticException.class, () ->
+            calc.divide(1, 0));
+    }
+
+
+
 
 }
