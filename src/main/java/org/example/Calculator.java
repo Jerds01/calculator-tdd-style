@@ -18,4 +18,38 @@ public class Calculator {
         return (short) (firstNum+secondNum);
     }
 
+    public int subtract(int firstNum, int secondNum){
+        return firstNum-secondNum;
+    }
+    public float subtract(float firstNum, float secondNum){
+        return firstNum-secondNum;
+    }
+    public double subtract(double firstNum, double secondNum){
+        return firstNum-secondNum;
+    }
+    public long subtract(long firstNum, long secondNum){
+        return firstNum-secondNum;
+    }
+    public short subtract(short firstNum, short secondNum){
+        return (short) (firstNum-secondNum);
+    }
+
+    // multiplication
+    public int multiply(int firstNum, int secondNum){
+        return firstNum*secondNum;
+    }
+    public float multiply(float firstNum, float secondNum){
+        return firstNum*secondNum;
+    }
+    public double multiply(double firstNum, double secondNum){
+        return firstNum*secondNum;
+    }
+    public long multiply(long firstNum, long secondNum){
+        return firstNum*secondNum;
+    }
+    public short multiply(short firstNum, short secondNum){
+        return (short) (firstNum*secondNum);
+    }
+
+
 }
